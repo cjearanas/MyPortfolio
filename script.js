@@ -1,87 +1,19 @@
-/*DISPLAY QUIZ*/
+document.querySelectorAll('a[href^="#"]').forEach(link => {
 
-async function displayQuiz(quizId) {
+    link.addEventListener("click", function(event) {
 
-    try {
+        event.preventDefault();
 
-        const file =
-            await getQuiz(
-                quizId
-            );
-
-
-        const image =
-            document.getElementById(
-                quizId + "Image"
-            );
-
-
-        const message =
-            document.getElementById(
-                quizId + "Message"
-            );
-
-
-        if (!file) {
-
-            image.style.display =
-                "none";
-
-            message.style.display =
-                "block";
-
-            return;
-
-        }
-        const imageURL =
-            URL.createObjectURL(
-                file
-            );
-
-
-        image.src =
-            imageURL;
-
-
-        image.style.display =
-            "block";
-
-
-        message.style.display =
-            "none";
-
-        image.onclick =
-            function () {
-
-                window.open(
-                    imageURL,
-                    "_blank"
-                );
-
-            };
-
-    }
-    catch (error) {
-
-        console.error(
-            "Error displaying quiz:",
-            error
+        const target = document.querySelector(
+            this.getAttribute("href")
         );
 
-    }
+        if (target) {
+            target.scrollIntoView({
+                behavior: "smooth"
+            });
+        }
 
-}
-/*LOAD QUIZZES WHEN PAGE OPENS*/
+    });
 
-document.addEventListener(
-    "DOMContentLoaded",
-    function () {
-
-        displayQuiz("quiz1");
-
-        displayQuiz("quiz2");
-
-        displayQuiz("quiz3");
-
-    }
-);
+});

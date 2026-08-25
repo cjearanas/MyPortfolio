@@ -5,70 +5,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>My Portfolio - Carl Jerald E. Aranas</title>
+    <title>Carl Jerald E. Aranas | Portfolio</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!--NAVIGATION -->
+    <!-- NAVIGATION -->
 
-    <nav>
+    <header class="navbar">
 
         <div class="logo">
             MY PORTFOLIO
         </div>
 
-        <ul>
+        <nav>
+            <a href="#home">HOME</a>
+            <a href="#quiz">QUIZ</a>
+            <a href="#laboratory">LABORATORY</a>
+            <a href="#exam">EXAM</a>
+        </nav>
 
-            <li>
-                <a href="#home">HOME</a>
-            </li>
-
-            <li>
-                <a href="#quiz">QUIZ</a>
-            </li>
-
-            <li>
-                <a href="#laboratory">LABORATORY</a>
-            </li>
-
-            <li>
-                <a href="#exam">EXAM</a>
-            </li>
-
-        </ul>
-
-    </nav>
+    </header>
 
 
+    <!-- HOME -->
 
-    <!--HOME-->
+    <section id="home" class="home">
 
-    <section class="home" id="home">
+        <div class="home-content">
 
-        <div class="profile">
+            <p class="welcome">
+                WELCOME TO MY PORTFOLIO
+            </p>
 
-            <div class="profile-image">
+            <h1>
+                Hi! I'm
+                <span>Carl Jerald E. Aranas.</span>
+            </h1>
 
-                <img src="profile.jpg" alt="Carl Jerald E. Aranas">
+            <h2>
+                BSIT-3B Student
+            </h2>
 
-            </div>
+            <p class="intro">
+                Hello! I’m Carl Jerald E. Aranas, a BSIT-3B student
+                who is currently exploring the world of programming
+                and technology. I’m still learning and improving my
+                skills, but every activity and project helps me become
+                a better programmer. Welcome to my portfolio!
+            </p>
 
 
-            <div class="profile-info">
+        </div>
 
-                <h1>Carl Jerald E. Aranas</h1>
 
-                <h2>BSIT-3B</h2>
+        <div class="profile-section">
 
-                <p>Hello! I’m Carl Jerald E. Aranas, a BSIT-3B student
-                    who is currently exploring the world of programming
-                    and technology. I’m still learning and improving my
-                    skills, but every activity and project helps me become
-                    a better programmer. Welcome to my portfolio!</p>
-            </div>
+            <div class="profile-glow"></div>
+
+            <img
+                src="profile.jpg"
+                alt="Carl Jerald E. Aranas"
+                class="profile-image"
+            >
 
         </div>
 
@@ -76,80 +77,71 @@
 
 
 
-    <!--QUIZ-->
+    <!-- QUIZ -->
 
-    <section class="content" id="quiz">
+    <section id="quiz" class="portfolio-section">
 
-        <h1>
-            QUIZ
-        </h1>
+        <div class="section-heading">
 
-        <p>My quizzes</p>
+            <h2>QUIZ</h2>
+
+            <p>
+                My quizzes
+            </p>
+
+        </div>
 
 
-        <div class="cards">
+        <div class="portfolio-grid">
 
 
-            <!--QUIZ 1-->
+            <!-- QUIZ 1 -->
 
-            <div class="card">
+            <div class="portfolio-card">
 
-                <div class="quiz-preview">
+                <div class="preview">
 
-                    <img id="quiz1Image" class="quiz-image" alt="Quiz 1">
-
-                    <p  id="quiz1Message" class="no-quiz"> No quiz uploaded yet. </p>
+                    <span id="quiz1Text">
+                        No quiz uploaded yet.
+                    </span>
 
                 </div>
 
-
-                <h2>Quiz 1</h2>
-                
+                <h3>Quiz 1</h3>
 
             </div>
 
 
+            <!-- QUIZ 2 -->
 
-            <!--QUIZ 2-->
+            <div class="portfolio-card">
 
-            <div class="card">
+                <div class="preview">
 
-                <div class="quiz-preview">
-
-                    <img id="quiz2Image" class="quiz-image" alt="Quiz 2" >
-
-                    <p id="quiz2Message" class="no-quiz">No quiz uploaded yet.</p>
+                    <span id="quiz2Text">
+                        No quiz uploaded yet.
+                    </span>
 
                 </div>
 
-
-                <h2> Quiz 2 </h2>
-
-               
-                
+                <h3>Quiz 2</h3>
 
             </div>
 
 
+            <!-- QUIZ 3 -->
 
-            <!--QUIZ 3-->
+            <div class="portfolio-card">
 
-            <div class="card">
+                <div class="preview">
 
-                <div class="quiz-preview">
-
-                    <img id="quiz3Image" class="quiz-image" alt="Quiz 3">
-
-                    <p id="quiz3Message" class="no-quiz">No quiz uploaded yet.</p>
+                    <span id="quiz3Text">
+                        No quiz uploaded yet.
+                    </span>
 
                 </div>
 
-
-                <h2>
-                    Quiz 3
-                </h2>
-
-                
+                <h3>Quiz 3</h3>
 
             </div>
 
@@ -159,32 +151,73 @@
 
 
 
-    <!-- LABORATORY-->
+    <!-- LABORATORY -->
 
-    <section class="content" id="laboratory">
+    <section id="laboratory" class="portfolio-section">
 
-        <h1> LABORATORY </h1>
+        <div class="section-heading">
 
-        <p> My laboratory activities. </p>
+            <h2>LABORATORY</h2>
+
+            <p>
+                My laboratory activities
+            </p>
+
+        </div>
 
 
-        <div class="cards">
+        <div class="portfolio-grid">
 
-            <div class="card">
 
-                <h2> Laboratory 1 </h2>
+            <!-- LABORATORY 1 -->
+
+            <div class="portfolio-card">
+
+                <div class="preview">
+
+                    <span id="lab1Text">
+                        No laboratory uploaded yet.
+                    </span>
+
+                </div>
+
+                <h3>Laboratory 1</h3>
+
+
             </div>
 
 
-            <div class="card">
+            <!-- LABORATORY 2 -->
 
-                <h2> Laboratory 2 </h2>
+            <div class="portfolio-card">
+
+                <div class="preview">
+
+                    <span id="lab2Text">
+                        No laboratory uploaded yet.
+                    </span>
+
+                </div>
+
+                <h3>Laboratory 2</h3>
+
+
             </div>
 
 
-            <div class="card">
+            <!-- LABORATORY 3 -->
 
-                <h2> Laboratory 3 </h2>
+            <div class="portfolio-card">
+
+                <div class="preview">
+
+                    <span id="lab3Text">
+                        No laboratory uploaded yet.
+                    </span>
+
+                </div>
+
+                <h3>Laboratory 3</h3>
 
             </div>
 
@@ -194,60 +227,103 @@
 
 
 
-    <!--EXAM-->
+    <!-- EXAM -->
 
-    <section class="content" id="exam">
+    <section id="exam" class="portfolio-section">
 
-        <h1> EXAM </h1>
+        <div class="section-heading">
 
-        <p>My examination outputs.</p>
+            <h2>EXAM</h2>
 
-
-        <div class="cards">
-
-            <div class="card">
-                <h2> Prelim Exam</h2>
-
-                <p>
-                    Prelim examination output.
-                </p>
-
-            </div>
-
-
-            <div class="card">
-
-                <h2>Midterm Exam</h2>
-
-                <p>Midterm examination output.</p>
-
-            </div>
-
-
-            <div class="card">
-                <h2>
-                    Final Exam
-                </h2>
-
-                 <p>Final examination output.</p>
-            </div>
+            <p>
+                My examination outputs
+            </p>
 
         </div>
+
+
+        <div class="portfolio-grid">
+
+
+            <!-- EXAM 1 -->
+
+            <div class="portfolio-card">
+
+                <div class="preview">
+
+                    <span id="exam1Text">
+                        No exam uploaded yet.
+                    </span>
+
+                </div>
+
+                <h3>Exam 1</h3>
+
+
+            </div>
+
+
+            <!-- EXAM 2 -->
+
+            <div class="portfolio-card">
+
+                <div class="preview">
+
+                    <span id="exam2Text">
+                        No exam uploaded yet.
+                    </span>
+
+                </div>
+
+                <h3>Exam 2</h3>               
+            </div>
+
+
+            <!-- EXAM 3 -->
+
+            <div class="portfolio-card">
+
+                <div class="preview">
+
+                    <span id="exam3Text">
+                        No exam uploaded yet.
+                    </span>
+
+                </div>
+
+                <h3>Exam 3</h3>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section id="Tl" class="Tl">
+
+        <h2>
+            Thanks for visiting my portfolio!
+        </h2>
+
+        <p>
+            I'm continuously learning and improving my
+            programming and technology skills.
+        </p>
 
     </section>
 
 
 
-    <!--FOOTER-->
+    <!-- FOOTER -->
 
     <footer>
 
-        © 2026 Carl Jerald E. Aranas | My Portfolio
+        <p>
+            © 2026 Carl Jerald E. Aranas | BSIT-3B
+        </p>
 
     </footer>
 
-
-    <!-- JAVASCRIPT -->
 
     <script src="script.js"></script>
 
