@@ -100,10 +100,8 @@
             <div class="portfolio-card">
 
                 <div class="preview">
-
-                    <span id="quiz1Text">
-                        No quiz uploaded yet.
-                    </span>
+                    <img src="images/image.png" alt="quiz 1" onclick="openImage(this.src)">
+                    
 
                 </div>
 
@@ -295,6 +293,12 @@
             </div>
         </div>
     </section>
+
+    <div id="imageModal" class="image-modal" onclick="closeImage()">
+        <span class="close-image">&times;</span>
+        <img id="fullImage" src="" alt="Full Image">
+    </div>
+
 
 
 
