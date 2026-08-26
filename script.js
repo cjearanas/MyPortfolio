@@ -28,3 +28,6 @@ function openImage(imageSrc) {
 function closeImage() {
     document.getElementById("imageModal").style.display = "none";
 }
+function openPDF(pdfPath) {
+    window.open(pdfPath, "_blank");
+}
